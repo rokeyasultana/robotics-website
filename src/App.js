@@ -4,12 +4,13 @@ import Blog from './Pages/Blog/Blog';
 import Home from './Pages/Home/Home';
 import Products from './Pages/Products/Products';
 import Services from './Pages/Services/Services';
+import Footer from './Pages/Shared/Footer/Footer';
 import Navbar from './Pages/Shared/Navbar';
  
 
 function App() {
   return (
-    <div className="App">
+    <div>
      <Navbar></Navbar>
 
      <Routes>
@@ -19,6 +20,8 @@ function App() {
 <Route path='/products' element={<Products></Products>}></Route>
 <Route path='/blog' element={<Blog></Blog>}></Route>
      </Routes>
+
+    <Footer></Footer>
     </div>
   );
 }
